@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>yak yed jajah </title>
+  <link rel="icon" type="pp/rr.png" href="favicon.ico">
+
+
+  <link rel="stylesheet" href="jah.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    
+    <h1 style="font-size: 50px;">❤️‍🔥 เข้ามาดูมีใจหรือมีสูตรจ๊ะ ❤️‍🔥</h1>
+    <p style="font-size: 50px;">ถึงจ๊ะจ๋า</p><button onclick="document.querySelector('audio').play()">💗</button>
+
+<!-- ไฟล์เพลง -->
+<audio id="bg-music" loop>
+  <source src="music/11.mp3" type="audio/mpeg">
+  
+</audio>
+<br>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="image-row">
+      <img src="pp/55.jpg" alt="jah1">
+      <video src="pp/44.mp4" autoplay loop muted playsinline></video>
+      <img src="pp/22.jpg" alt="jah2">
+    </div>
+    <h2>ถึงไออ้วนของเค้า</h2>
+    <div class="message-box">
+  <p style="font-size: 50px;">
+    ขอบคุณที่เข้ามาในชีวิต เข้าทำให้สนุก ทำให้ยิ้ม ทำให้หัวเราะ ขอบคุณที่ไม่ยอมเเพ้ในตัวเค้า
+    ชอบที่เธอน่ารัก ใส่ใจ พูดเพราะ เข้าใจเค้า ใช้เหตุผล
+    สาวเเว่นหุ่นอวบน่ารักสุดๆๆๆๆ 💌<br>
+  </p>
+  <p class="center-line">พิมพ์อะไรแบบนี้มันเขินนนนน🫠</p>
+</div>
+   <div class="center-line">
+    </p>
+    <p style=" font-size: 180px;">เพราะ</p>
+    <p style=" font-size: 180px;">งั้น</p>
+    <p style=" font-size: 180px;">เป็น</p>
+    <p style=" font-size: 180px;">เเฟน</p>
+    <p style=" font-size: 180px;">กัน</p>
+    <p style=" font-size: 180px;">มั้ย</p>
+    <p style=" font-size: 180px;">มายเลดี้</p>
+    <p style=" font-size: 180px;">EIEI</p>
+    
+   </div>
+    <div class="button-row">
+     <button id="btn-yes">เป็น</button>
+     <button id="btn-no">ไม่เป็น</button>
+
+
+    </div>
+  </main>
+  
+ <!-- ปุ่มเล่นเพลง -->
+
+<script>
+  const music = document.getElementById('bg-music');
+  music.volume = 0.1; 
+
+  document.getElementById('btn-yes').addEventListener('click', function () {
+  Swal.fire({
+    title: "น่ารักค่ะเบบี๋😽",
+    icon: "success"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      
+      window.location.href = 'https://youtu.be/lYl7WhMvq9g?si=mNxhRJM9BAyvBxAd';  
+    }
+  });
+
+});
+ document.getElementById('btn-no').addEventListener('click', function () {
+    Swal.fire({
+  title: "ไปเลือกใหม่! 😾",
+  icon: "question"
+});
+  });
+
+</script>
+
+
+
+  <!-- Footer -->
+  <footer>
+    ©KOYOMI
+  </footer>
+
+</body>
+</html>
