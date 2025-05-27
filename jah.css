@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #e4c7cd, #ffc0cb);
+  color: #4a001f;
+  font-family: 'ปป ปป1';
+}
+
+header {
+  background-color: #f097b4;
+  color: rgb(245, 238, 247);
+  padding: 20px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.2em;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.image-row img,
+.image-row video {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+main h2 {
+  font-size: 2em;
+  color: #d67998;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+main p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* ปุ่มให้จัดกึ่งกลาง */
+button {
+  background-color: #ff4d6d;
+  color: white;
+  padding: 12px 25px;
+  margin: 30px auto 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  display: block;
+}
+
+button:hover {
+  background-color: #e63956;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* ระยะห่างระหว่างปุ่ม */
+  margin-top: 40px;
+  max-width: 300px; /* กำหนดความกว้างสูงสุดรวมของกล่องปุ่ม */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #ffebfb;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #800040;
+  text-align: center;
+}
+
+
+
+.message-box {
+  max-width: 1650px;              /* กำหนดความกว้างให้เหมาะสม */
+  margin: 60px auto;             /* อยู่กลางแนวนอน + มีระยะห่างด้านบน */
+  padding: 10px 20px;            /* เพิ่มช่องว่างรอบข้อความ */
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  text-align: justify;           /* ขยายข้อความเต็มบรรทัด */
+  line-height: 1.8;
+  font-size: 1.4em;
+}
+
+.center-line {
+  text-align: center;
+  font-size: 50px;
+  
+  margin-top: 20px;
+}
+
+@font-face {
+  font-family: 'ปป ปป1';
+  src: url('ปป/ปป2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
